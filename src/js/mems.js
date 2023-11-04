@@ -19,7 +19,6 @@ const download = document.getElementById('download');
 let image = new Image();
 let italicBoolean = false
 let boldBoolean = false
-let underlineBoolean = false
 let textAlignFont = 'left'
 let canvasTextPosition = 0
 
@@ -53,7 +52,7 @@ imageInput.addEventListener('change', () => {
   }
 });
 
-function updateCanvas() {
+const updateCanvas = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(image, 0, 0);
 
