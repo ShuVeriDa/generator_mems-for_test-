@@ -31,7 +31,7 @@ textarea {
     margin: 5px 0;
 }
 
-button {
+#generateMeme {
     border-radius: 8px;
     margin: 10px 0;
     padding: 10px 20px;
@@ -41,12 +41,12 @@ button {
     cursor: pointer;
 }
 
-h4 {
+h4, h5 {
     padding: 0;
     margin: 0;
 }
 
-button:hover {
+#generateMeme:hover {
     background-color: #1a5bb6;
 }
 
@@ -60,6 +60,7 @@ button:hover {
 .configText {
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     display: flex;
 }
 
@@ -118,3 +119,62 @@ a {
     text-decoration: none;
     color: #007BFF;
 }
+
+.textLayoutComponent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#italic {
+    font-style: italic;
+}
+#bold {
+    font-weight: bold;
+}
+
+#italic, #bold{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+#italic.active,
+#italic:hover,
+#bold:hover,
+#bold.active,
+#textAlignLeft.active,
+#textAlignRight.active,
+#textAlignCenter.active,
+#textAlignLeft:hover,
+#textAlignRight:hover,
+#textAlignCenter:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#alignText {
+    width: 100px;
+}
+
+.textLayout {
+    display: flex;
+    gap: 5px;
+}
+
+#topTextY, #bottomTextY {
+    width: 70px;
+}
+
+#textAlignLeft, #textAlignRight, #textAlignCenter {
+    border: 1px solid transparent;
+    width: 30px;
+    height: 30px;
+    /*padding: 3px;*/
+    padding: 5px;
+}
+
